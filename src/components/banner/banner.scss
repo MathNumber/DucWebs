@@ -1,0 +1,46 @@
+.banner{
+    width: 100%;
+    height: 722px;
+    background-color: #C7D4CE;
+    display: flex;
+    justify-content: center;
+    &-container{
+        width: 1070px;
+        height: 720px;
+        display: flex;
+        justify-content: space-between;
+        &-text{
+            position: relative;
+            top: 280px;
+            width: 360px;
+            &__subheading{
+                width: 145px;
+                font-weight: bolder;
+                color: #3C9488;
+            }
+            &__name{
+                width: 300px;
+                color: #3C9488;
+                font-size: 50px;
+            }
+            &__full{
+                width: 220px;
+                margin-top: 15px;
+                font-size: 50px;
+                color: white;
+            }
+            &__info{
+                width: 350px;
+                margin-top: 30px;
+                font-weight: normal;
+            }
+        }
+        &__img{
+            position: relative;
+            bottom: 240px;
+        }
+    }
+}
+
+
+

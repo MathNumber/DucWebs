@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#root{
+    overflow: auto;
+    height: 100vh;
+    scroll-behavior: smooth;
+    &::-webkit-scrollbar {
+        display: none; 
+    }
+}
+body::-webkit-scrollbar {
+    display: none; 
+}
+
+

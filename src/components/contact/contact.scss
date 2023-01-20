@@ -1,0 +1,99 @@
+.contact{
+    display: inline-block;
+    width: 100%;
+    height: 802px;
+    background-image: linear-gradient(180deg,#DDC0B7,#E7B6AD);
+    &__title{
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        color: #3C3E48;
+        font-size: 45px;
+    }
+    &-container{
+        display: flex;
+        justify-content: center;
+        &-info{
+            width: 1070px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            &-1{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 300px;
+                margin-top: 150px;
+                &__border{
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 50%;
+                    background-color: #E9BFB6;
+                }
+                &__icon{
+                    margin-top: 35%;
+                    margin-left: 35%;  
+                }
+                &__address{
+                    margin-top: 30px;
+                }
+                &__detail_1{
+                    margin-top: 30px;
+                }
+            }
+            &-2{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 300px;
+                margin-top: 150px;
+                &__border{
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 50%;
+                    background-color: #E9BFB6;
+                }
+                &__icon{
+                    margin-top: 35%;
+                    margin-left: 35%;  
+                }
+                &__phone{
+                    margin-top: 30px;
+                }
+                &__detail_2{
+                    margin-top: 30px;
+                }
+            }
+            &-3{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 300px;
+                margin-top: 150px;
+                &__border{
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 50%;
+                    background-color: #E9BFB6;
+                }
+                &__icon{
+                    margin-top: 35%;
+                    margin-left: 35%;  
+                }
+                &__email{
+                    margin-top: 30px;
+                }
+                &__detail_3{
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
