@@ -17,7 +17,7 @@ AOS.init();
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="App">
+    <>
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Banner />
@@ -26,7 +26,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-    </div>
+    </>
   );
 }
 

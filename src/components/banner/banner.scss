@@ -89,17 +89,17 @@ $desktop-width: 1024px;
         }
         &__img{
             position: relative;
-            left: 100px;
-            top: 70px;  
+            left: -10px;
+            top: 30px;
             @include tablet{
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
-                width: 800px;
+                width: 600px;
             }
             @include mobile{
                 position: relative;
-                right: 150px;
+                right: 120px;
             }
             & div{
                 height: auto;
@@ -109,9 +109,9 @@ $desktop-width: 1024px;
                 }
             }
             & img{
-                object-fit: cover;
-                height: 650px;
-                width: 650px;
+               object-fit: contain;
+                height: 700px;
+                width: 700px;
                 @include tablet{
                     opacity: 0.8;
                 }
@@ -122,8 +122,8 @@ $desktop-width: 1024px;
                     width: 200px;
                     object-fit: cover;
                     position: relative;
-                    top: 50px;
-                    right: 70px;
+                    top: 80px;
+                    right: -40px;
                 }
             }
         }
