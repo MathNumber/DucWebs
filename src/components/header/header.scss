@@ -86,6 +86,8 @@ $desktop-width: 1024px;
             }
             @include mobile{
                 display: block;
+                position: relative;
+                left: -110px;
             }
             .hamburger{
                 position: relative;
