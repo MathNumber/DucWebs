@@ -2,8 +2,7 @@
     margin: 0px;
     padding: 0px;
 }
-#root{
-    overflow: auto;
+.App{
     height: 100vh;
     scroll-behavior: smooth;
     &::-webkit-scrollbar {
@@ -13,5 +12,4 @@
 body::-webkit-scrollbar {
     display: none; 
 }
-
 

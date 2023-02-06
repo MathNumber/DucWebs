@@ -1,10 +1,24 @@
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px; 
+@mixin mobile { @media (max-width: #{$mobile-width - 1px}) {     
+    @content;   
+   } 
+}  
+@mixin tablet { @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {       
+    @content;   
+  } 
+ } 
 .contact{
     display: inline-block;
     width: 100%;
     height: 802px;
     background-image: linear-gradient(180deg,#DDC0B7,#E7B6AD);
+    @include mobile{
+        height: 1150px;
+    }
     &__title{
-        margin-top: 100px;
+        margin-top: 160px;
         display: flex;
         justify-content: center;
         color: #3C3E48;
@@ -23,7 +37,15 @@
                 flex-direction: column;
                 align-items: center;
                 width: 300px;
-                margin-top: 150px;
+                margin-top: 130px;
+                @include tablet {
+                    position: relative;
+                    left: 50px;
+                }
+                @include mobile{
+                    position: relative;
+                    left: 300px;
+                }
                 &__border{
                     height: 100px;
                     width: 100px;
@@ -39,6 +61,10 @@
                 }
                 &__detail_1{
                     margin-top: 30px;
+                    @include tablet {
+                        width: 200px;
+                        text-align: center;
+                    }
                 }
             }
             &-2{
@@ -46,7 +72,11 @@
                 flex-direction: column;
                 align-items: center;
                 width: 300px;
-                margin-top: 150px;
+                margin-top: 130px;
+                @include mobile{
+                    position: relative;
+                    top: 260px;
+                }
                 &__border{
                     height: 100px;
                     width: 100px;
@@ -69,7 +99,16 @@
                 flex-direction: column;
                 align-items: center;
                 width: 300px;
-                margin-top: 150px;
+                margin-top: 130px;
+                @include tablet {
+                    position: relative;
+                    right: 50px;
+                }
+                @include mobile{
+                    position: relative;
+                    right: 300px;
+                    top: 520px;
+                }
                 &__border{
                     height: 100px;
                     width: 100px;

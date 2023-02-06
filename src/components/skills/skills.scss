@@ -1,8 +1,25 @@
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px; 
+@mixin mobile { @media (max-width: #{$mobile-width - 1px}) {     
+    @content;   
+   } 
+}  
+@mixin tablet { @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {       
+    @content;   
+  } 
+ } 
 .skill{
     width: 100%;
     height: 602px;
     background-image: linear-gradient(180deg,#C7D4CE,#D1CCC4);
+    @include mobile{
+        height: 1002px;
+    }
     &-title{
+        @include mobile{
+            font-size: 28px;
+        }
         position: relative;
         top: 150px;
         display: flex;
@@ -18,7 +35,7 @@
         &-row{
             position: relative;
             width: 1070px;
-            margin-top: 100px;
+            margin-top: 150px;
             display: flex;
             flex-wrap: wrap;
             height: 600px;
@@ -31,7 +48,17 @@
                 height: 220px;
                 background-color: #D8CEC6;
                 box-shadow: 2px 2px 2px 2px #D2C6BF;
+               @include tablet{
+                    width: 200px;
+                    height: 200px;
+               }
+               @include mobile{
+                margin-top: 20px;
+               }
                 &:hover{
+                    @include mobile{
+                        transform: scale(1);
+                    }
                     transform: scale(1.1);
                     background-color: #3C9488;
                     & .skill-container-row__info{
@@ -42,9 +69,42 @@
                     }
                 }
             }
+            
             &__1,
             &__3{
                 margin-top: 30px;
+            }
+            &__1{
+                @include tablet{
+                    position: relative;
+                    left: 50px;
+                }
+                @include mobile{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 320px;
+                }
+            }
+            &__2{
+                @include mobile{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 320px;
+                }
+            }
+            &__3{
+                @include tablet{
+                    position: relative;
+                    right: 50px;
+                }
+                @include mobile{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 320px;
+                }
             }
             &__info{
                 margin-top: 30px;

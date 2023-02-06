@@ -1,3 +1,14 @@
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px; 
+@mixin mobile { @media (max-width: #{$mobile-width - 1px}) {     
+    @content;   
+   } 
+}  
+@mixin tablet { @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {       
+    @content;   
+  } 
+ }  
 .banner{
     width: 100%;
     height: 722px;
@@ -11,33 +22,110 @@
         justify-content: space-between;
         &-text{
             position: relative;
-            top: 280px;
+            top: 270px;
             width: 360px;
+            @include tablet{
+                position: absolute;
+                margin-left: 35%;
+                z-index: 10;
+                margin-top: 100px;
+            }
             &__subheading{
                 width: 145px;
                 font-weight: bolder;
                 color: #3C9488;
+                @include tablet{
+                    position: relative;
+                    left: 80px;
+                }
+                @include mobile{
+                    position: relative;
+                    left: 420px;
+                    top: 60px;
+                }
             }
             &__name{
                 width: 300px;
                 color: #3C9488;
                 font-size: 50px;
+                @include tablet{
+                    position: relative;
+                    left: 10px;
+                }
+                @include mobile {
+                    position: relative;
+                    left: 345px;
+                    top: 40px;
+                }
             }
             &__full{
                 width: 220px;
                 margin-top: 15px;
                 font-size: 50px;
                 color: white;
+                @include tablet{
+                    position: relative;
+                    left: 40px;
+                }
+                @include mobile{
+                    position: relative;
+                    left: 380px;
+                    top: 40px;
+                }
             }
             &__info{
                 width: 350px;
                 margin-top: 30px;
                 font-weight: normal;
+                @include tablet {
+                    color: white;
+                }
+                @include mobile {
+                    position: relative;
+                    left: 318px;
+                    top: 40px;
+                }
             }
         }
         &__img{
             position: relative;
-            bottom: 240px;
+            left: 100px;
+            top: 70px;  
+            @include tablet{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 800px;
+            }
+            @include mobile{
+                position: relative;
+                right: 150px;
+            }
+            & div{
+                height: auto;
+                width: 615px;
+                @include tablet{
+                    background-color:#8B9691;
+                }
+            }
+            & img{
+                object-fit: cover;
+                height: 650px;
+                width: 650px;
+                @include tablet{
+                    opacity: 0.8;
+                }
+                @include mobile {
+                    background-color: white;
+                    border-radius: 50%;
+                    height: 200px;
+                    width: 200px;
+                    object-fit: cover;
+                    position: relative;
+                    top: 50px;
+                    right: 70px;
+                }
+            }
         }
     }
 }

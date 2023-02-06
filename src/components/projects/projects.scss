@@ -1,7 +1,24 @@
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px; 
+@mixin mobile { @media (max-width: #{$mobile-width - 1px}) {     
+    @content;   
+   } 
+}  
+@mixin tablet { @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {       
+    @content;   
+  } 
+ } 
 .project{
     width: 100%;
     height: 1902px;
     background-image: linear-gradient(180deg,#D1CCC4,#DDC0B7);
+    @include tablet{
+        height: 1602px;
+    }
+    @include mobile{
+        height: 1102px;
+    }
     &-container{
         position: relative;
         top: 150px;
@@ -10,6 +27,9 @@
             justify-content: center;
             font-size: 45px;
             color: #3C3E48;
+            @include mobile{
+                font-size: 28px;
+            }
         }
         &-row-1{
             display: flex;
@@ -28,12 +48,28 @@
                     color: #4E5058;
                     margin-top: 250px;
                     margin-right: 70px;
+                    @include tablet{
+                        display: none;
+                    }
+                    @include mobile{
+                        display: none;
+                    }
                 }
                 &__img_1{
                     margin-top: 100px;
                     width: 600px;
                     height: 350px;
                     object-fit: contain;
+                    @include tablet {
+                        position: relative;
+                        left: 2.5%;
+                    }
+                    @include mobile {
+                        position: relative;
+                        left: 30px;
+                        width: 350px;
+                        bottom: 100px;
+                    }
                 }
                 &__caption_1{
                     position: relative;
@@ -55,6 +91,17 @@
                     position: absolute;
                     width:602px;
                     height: 280px;
+                    @include tablet{
+                        margin-left: 10px;
+                        margin-top: 19px;
+                    }
+                    @include mobile{
+                        position: relative;
+                        left: 260px;
+                        top: -25px;
+                        width: 350px;
+                        height: 165px;
+                    }
                 }
                 &__caption-text{
                     color:#fff;
@@ -68,6 +115,11 @@
                     a{
                         text-decoration: none;
                         color: white;
+                    }
+                    @include mobile{
+                        position: relative;
+                        left: 120px;
+                        bottom: 250px;
                     }
                 }
             }
@@ -86,6 +138,12 @@
                     margin-left: 880px;
                     position: relative;
                     top: 160px;
+                    @include tablet{
+                        display: none;
+                    }
+                    @include mobile{
+                        display: none;
+                    }
                 }
                 &__caption_2{
                     opacity: 0;
@@ -106,12 +164,34 @@
                     margin-left: 15%;
                     height: 350px;
                     width: 600px;
+                    @include tablet {
+                        position: relative;
+                        left: 2.2%;
+                    }
+                    @include mobile {
+                        position: relative;
+                        left: 135px;
+                        width: 350px;
+                        bottom: 220px;
+                    }
                 }
                 &__blur{
                     background-color: rgba(51,47,47,0.65);
                     position: absolute;
                     width:602px;
                     height: 280px;
+                    @include tablet{
+                        margin-top: 21px;
+                        position: relative;
+                        right: 110px;
+                    }
+                    @include mobile{
+                        position: relative;
+                        left: 10px;
+                        top: -142px;
+                        width: 350px;
+                        height: 165px;
+                    }
                 }  
                 &__caption-text{
                     color:#fff;
@@ -122,6 +202,16 @@
                     display: flex;
                     align-items: center;
                     margin-left: 240px;
+                    @include tablet {
+                        position: relative;
+                        bottom: 290px;
+                        right: 120px;
+                    }
+                    @include mobile{
+                        position: relative;
+                        right: 130px;
+                        bottom: 365px;
+                    }
                     a{
                         text-decoration: none;
                         color: white;
@@ -145,6 +235,12 @@
                     color: #4E5058;
                     margin-top: 130px;
                     margin-right: 70px;
+                    @include tablet{
+                        display: none;
+                    }
+                    @include mobile{
+                        display: none;
+                    }
                 }
                 &__caption_3{
                     margin-right: 20px;
@@ -164,12 +260,37 @@
                     object-fit: contain;
                     height: 350px;
                     width: 600px;
+                    @include tablet {
+                        position: relative;
+                        left: 0.5%;
+                        bottom: 75px;
+                    }
+                    @include mobile {
+                        position: relative;
+                        bottom: 390px;
+                        height: 350px;
+                        width: 350px;
+                    }
                 }
                 &__blur{
                     background-color: rgba(51,47,47,0.65);
                     position: absolute;
                     width:602px;
                     height: 280px;
+                    @include tablet {
+                        position: relative;
+                        bottom: 75px;
+                        margin-top: 20px;
+                        margin-left: 20px;
+                    }
+                    @include mobile{
+                        position: relative;
+                        left: 270px;
+                        top: -312px;
+                        width: 350px;
+                        height: 165px;
+                    }
+                    
                 }
                 &__caption-text{
                     color:#fff;
@@ -180,6 +301,15 @@
                     display: flex;
                     align-items: center;
                     margin-left: 240px;
+                    @include tablet{
+                        position: relative;
+                        bottom: 360px;
+                    }
+                    @include mobile{
+                        position: relative;
+                        left: 130px;
+                        bottom: 535px;
+                    }
                     a{
                         text-decoration: none;
                         color: white;
@@ -198,11 +328,17 @@
                     font-family: sans-serif;
                     width: 400px;
                     height: 50px;
-                    font-size: 20px;
+                    font-size: 23px;
                     color: #4E5058;
                     margin-left: 880px;
                     position: relative;
                     top: 160px;
+                    @include tablet{
+                        display: none;
+                    }
+                    @include mobile{
+                        display: none;
+                    }
                 }
                 &__caption_4{
                     opacity: 0;
@@ -223,12 +359,35 @@
                     object-fit: contain;
                     height: 350px;
                     width: 600px;
+                    @include tablet {
+                        position: relative;
+                        left: 2.4%;
+                        bottom: 75px;
+                    }
+                    @include mobile {
+                        position: relative;
+                        left: 135px;
+                        width: 350px;
+                        bottom: 500px;
+                    }
                 }
                 &__blur{
                     background-color: rgba(51,47,47,0.65);
                     position: absolute;
                     width:602px;
                     height: 280px;
+                    @include tablet {
+                        position: relative;
+                        bottom: 55px;
+                        right: 60px;
+                    }
+                    @include mobile{
+                        position: relative;
+                        left: 60px;
+                        top: -420px;
+                        width: 350px;
+                        height: 165px;
+                    }
                 }
                 &__caption-text{
                     color:#fff;
@@ -239,6 +398,16 @@
                     display: flex;
                     align-items: center;
                     margin-left: 240px;
+                    @include tablet{
+                        position: relative;
+                        bottom: 360px;
+                        right: 64px;
+                    }
+                    @include mobile{
+                        position: relative;
+                        right: 80px;
+                        bottom: 650px;
+                    }
                     a{
                         text-decoration: none;
                         color: white;
