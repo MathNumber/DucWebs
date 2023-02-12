@@ -4,7 +4,7 @@ function Introduction() {
   return (
     <div className="introduction" id="introduction">
       <div className="introduction-container ">
-        <div data-aos="fade-left" className="introduction-container-text">
+        <div data-aos="fade-right" className="introduction-container-text">
           <p className="introduction-container-text__title">
             Một số thông tin của tôi
           </p>

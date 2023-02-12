@@ -36,13 +36,20 @@ $desktop-width: 1024px;
             justify-content: center;
             &v{
                 position: relative;
-                left: 280px;
-                justify-content: space-between;
                 display: flex;
-                width: 1570px;
+                left: 85px;
+                width: 970px;
+                @include tablet{
+                    width: 600px;
+                }
+                @include mobile{
+                    position: relative;
+                    left: -30px;
+                    width: 340px;
+                }
                 &__info_1{
                     font-family: sans-serif;
-                    width: 400px;
+                    width: 5000px;
                     height: 50px;
                     font-size: 20px;
                     color: #4E5058;
@@ -62,11 +69,11 @@ $desktop-width: 1024px;
                     object-fit: contain;
                     @include tablet {
                         position: relative;
-                        left: 2.5%;
+                        right: 80px;
                     }
                     @include mobile {
                         position: relative;
-                        left: 30px;
+                        left: 18px;
                         width: 350px;
                         bottom: 100px;
                     }
@@ -92,12 +99,12 @@ $desktop-width: 1024px;
                     width:602px;
                     height: 280px;
                     @include tablet{
-                        margin-left: 10px;
+                        margin-left: -100px;
                         margin-top: 19px;
                     }
                     @include mobile{
                         position: relative;
-                        left: 260px;
+                        left: 248px;
                         top: -25px;
                         width: 350px;
                         height: 165px;
@@ -106,7 +113,7 @@ $desktop-width: 1024px;
                 &__caption-text{
                     color:#fff;
                     position: absolute;
-                    width: 100%;
+                    width: 300px;
                     height: 100%;
                     font-size:18px;
                     display: flex;
@@ -116,15 +123,20 @@ $desktop-width: 1024px;
                         text-decoration: none;
                         color: white;
                     }
+                    @include tablet{
+                        position: relative;
+                        right: 100px;
+                    }
                     @include mobile{
                         position: relative;
-                        left: 120px;
+                        left: 105px;
                         bottom: 250px;
                     }
                 }
             }
         }
         &-row-2{
+            height: 450px;
             display: flex;
             justify-content: center;
             &v{
@@ -153,10 +165,17 @@ $desktop-width: 1024px;
                     bottom: 320px;
                     left: 214px;
                     transition: 0.45s;
+                    @include tablet{
+                        width: 300px;
+                    }
                     &:hover{
                         transform: translateY(-20px);
                         transition: 0.5s;
                         opacity: 1;
+                    }
+                    @include mobile{
+                        position: relative;
+                        width: 200px;
                     }
                 } 
                 &__img_2{
@@ -170,8 +189,8 @@ $desktop-width: 1024px;
                     }
                     @include mobile {
                         position: relative;
-                        left: 135px;
                         width: 350px;
+                        left: 40px;
                         bottom: 220px;
                     }
                 }
@@ -183,11 +202,11 @@ $desktop-width: 1024px;
                     @include tablet{
                         margin-top: 21px;
                         position: relative;
-                        right: 110px;
+                        right: 100px;
                     }
                     @include mobile{
                         position: relative;
-                        left: 10px;
+                        left: -121px;
                         top: -142px;
                         width: 350px;
                         height: 165px;
@@ -208,8 +227,9 @@ $desktop-width: 1024px;
                         right: 120px;
                     }
                     @include mobile{
+                        width:200px;
                         position: relative;
-                        right: 130px;
+                        right: 260px;
                         bottom: 365px;
                     }
                     a{
@@ -222,11 +242,14 @@ $desktop-width: 1024px;
         &-row-3{
             display: flex;
             justify-content: center;
+            @include mobile {
+                position: relative;
+                bottom: 300px;
+            }
             &v{
                 display: flex;
                 justify-content: flex-end;
                 position: relative; 
-                bottom: 230px;
                 &__info_3{
                     font-family: sans-serif;
                     width: 400px;
@@ -266,8 +289,9 @@ $desktop-width: 1024px;
                         bottom: 75px;
                     }
                     @include mobile {
+                        right: 8px;
                         position: relative;
-                        bottom: 390px;
+                        bottom: 140px;
                         height: 350px;
                         width: 350px;
                     }
@@ -285,8 +309,8 @@ $desktop-width: 1024px;
                     }
                     @include mobile{
                         position: relative;
-                        left: 270px;
-                        top: -312px;
+                        left: 260px;
+                        top: -60px;
                         width: 350px;
                         height: 165px;
                     }
@@ -299,16 +323,17 @@ $desktop-width: 1024px;
                     height: 100%;
                     font-size:18px;
                     display: flex;
+                    justify-content: center;
                     align-items: center;
-                    margin-left: 240px;
                     @include tablet{
                         position: relative;
                         bottom: 360px;
                     }
                     @include mobile{
+                        width: 200px;
                         position: relative;
-                        left: 130px;
-                        bottom: 535px;
+                        left: 340px;
+                        bottom: 285px;
                     }
                     a{
                         text-decoration: none;
@@ -320,9 +345,12 @@ $desktop-width: 1024px;
         &-row-4{
             display: flex;
             justify-content: center;
+            @include mobile{
+                position: relative;
+                bottom: 460px;
+            }
             &v{
                 position: relative; 
-                bottom: 230px;
                 right: 100px;
                 &__info_4{
                     font-family: sans-serif;
@@ -353,6 +381,11 @@ $desktop-width: 1024px;
                         transition: 0.5s;
                         opacity: 1;
                     }
+                    @include mobile{
+                        right: 40px;
+                        position: relative;
+                        width: 300px;
+                    }
                 }
                 &__img_4{
                     margin-left:15%;
@@ -366,9 +399,9 @@ $desktop-width: 1024px;
                     }
                     @include mobile {
                         position: relative;
-                        left: 135px;
+                        left: 40px;
                         width: 350px;
-                        bottom: 500px;
+                        bottom: 100px;
                     }
                 }
                 &__blur{
@@ -383,8 +416,8 @@ $desktop-width: 1024px;
                     }
                     @include mobile{
                         position: relative;
-                        left: 60px;
-                        top: -420px;
+                        left: 132px;
+                        top: -20px;
                         width: 350px;
                         height: 165px;
                     }
@@ -397,7 +430,8 @@ $desktop-width: 1024px;
                     font-size:18px;
                     display: flex;
                     align-items: center;
-                    margin-left: 240px;
+                    justify-content: center;
+                    
                     @include tablet{
                         position: relative;
                         bottom: 360px;
@@ -405,8 +439,8 @@ $desktop-width: 1024px;
                     }
                     @include mobile{
                         position: relative;
-                        right: 80px;
-                        bottom: 650px;
+                        right: -160px;
+                        bottom: 250px;
                     }
                     a{
                         text-decoration: none;
