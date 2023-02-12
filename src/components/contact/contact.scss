@@ -50,7 +50,7 @@ $desktop-width: 1024px;
                 }
                 @include mobile{
                     position: relative;
-                    left: 15%;
+                    left: 13%;
                 }
                 &__border{
                     height: 100px;
@@ -72,6 +72,8 @@ $desktop-width: 1024px;
                         text-align: center;
                     }
                     @include mobile{
+                        position: relative;
+                        left: 10px;
                         width: 300px;
                     }
                 }
@@ -85,7 +87,7 @@ $desktop-width: 1024px;
                 @include mobile{
                     position: relative;
                     top: 260px;
-                    right: 190px;
+                    right: 200px;
                 }
                 &__border{
                     height: 100px;
@@ -119,7 +121,7 @@ $desktop-width: 1024px;
                 }
                 @include mobile{
                     position: relative;
-                    right: 385px;
+                    right: 395px;
                     top: 520px;
                 }
                 &__border{
