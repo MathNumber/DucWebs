@@ -51,7 +51,7 @@ function Introduction() {
             </li>
           </ul>
           <button className="introduction-container-text__cv">
-            <a href="assets/NguyenDuc-DE170153.PNG">Xem CV</a>
+            <a href="assets/NguyenDuc-DE170153.png">Xem CV</a>
           </button>
         </div>
         <div data-aos="fade-right" className="introduction-container__img">
