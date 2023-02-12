@@ -110,6 +110,10 @@ $desktop-width: 1024px;
                 height: 50px;
                 font-size: 20px;
                 border-radius: 30px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
             }
         }
         &__img{
