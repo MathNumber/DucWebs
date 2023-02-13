@@ -25,7 +25,7 @@ function Banner() {
         </div>
         <div data-aos="fade-down" className="banner-container__img">
           <div>
-            <img src="assets/duc.png" alt=""></img>
+            <img src="assets/duc.jpg" alt=""></img>
           </div>
         </div>
       </div>

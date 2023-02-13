@@ -119,9 +119,12 @@ $desktop-width: 1024px;
                 }
             }
             & img{
-               object-fit: cover;
-                height: 650px;
-                width: 650px;
+                position: relative;
+                top: 30px;
+                object-fit: cover;
+                border-radius: 50%;
+                height: 580px;
+                width: 580px;
                 @include tablet{
                     opacity: 0.8;
                 }
