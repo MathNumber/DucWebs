@@ -128,6 +128,7 @@ $desktop-width: 1024px;
                         right: 100px;
                     }
                     @include mobile{
+                        width: 200px;
                         position: relative;
                         left: 112px;
                         bottom: 250px;
