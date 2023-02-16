@@ -18,7 +18,7 @@ $desktop-width: 1024px;
     @include mobile{
         width: 100%;
     }
-    &-container{
+    &__container{
         width: 1070px;
         height: 720px;
         display: flex;
@@ -37,7 +37,7 @@ $desktop-width: 1024px;
                 z-index: 10;
                 margin-top: 100px;
             }
-            &__subheading{
+            &-subheading{
                 width: 145px;
                 font-weight: bolder;
                 color: #3C9488;
@@ -51,7 +51,7 @@ $desktop-width: 1024px;
                     top: 60px;
                 }
             }
-            &__name{
+            &-name{
                 width: 300px;
                 color: #3C9488;
                 font-size: 50px;
@@ -65,7 +65,7 @@ $desktop-width: 1024px;
                     top: 40px;
                 }
             }
-            &__full{
+            &-full{
                 width: 220px;
                 margin-top: 15px;
                 font-size: 50px;
@@ -80,7 +80,7 @@ $desktop-width: 1024px;
                     top: 40px;
                 }
             }
-            &__info{
+            &-info{
                 width: 350px;
                 margin-top: 30px;
                 font-weight: normal;
@@ -94,7 +94,7 @@ $desktop-width: 1024px;
                 }
             }
         }
-        &__img{
+        &-img{
             position: relative;
             left: 35px;
             top: 80px;
@@ -102,7 +102,7 @@ $desktop-width: 1024px;
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
-                width: 600px;
+                width: 690px;
             }
             @include mobile{
                 width: 200px;

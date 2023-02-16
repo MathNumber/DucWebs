@@ -14,16 +14,16 @@ function Banner() {
   }, []);
   return (
     <div id="banner" className="banner ">
-      <div className="banner-container">
-        <div data-aos="fade-down" className="banner-container-text">
-          <h1 className="banner-container-text__subheading">Xin chào!</h1>
-          <h1 className="banner-container-text__full">Tôi tên là</h1>
-          <h1 className="banner-container-text__name">Nguyễn Đức</h1>
-          <h2 className="banner-container-text__info">
+      <div className="banner__container">
+        <div data-aos="fade-down" className="banner__container-text">
+          <h1 className="banner__container-text-subheading">Xin chào!</h1>
+          <h1 className="banner__container-text-full">Tôi tên là</h1>
+          <h1 className="banner__container-text-name">Nguyễn Đức</h1>
+          <h2 className="banner__container-text-info">
             Đang học <span ref={textRef}></span>
           </h2>
         </div>
-        <div data-aos="fade-down" className="banner-container__img">
+        <div data-aos="fade-down" className="banner__container-img">
           <div>
             <img src="assets/duc.jpg" alt=""></img>
           </div>

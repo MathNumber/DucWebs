@@ -18,7 +18,7 @@ $desktop-width: 1024px;
     @include mobile{
         height: 512px;
     }
-    &-container{
+    &__container{
         width: 1070px;
         display: flex;
         align-items: center;
@@ -48,7 +48,7 @@ $desktop-width: 1024px;
                 top: 10px;
                 left: -75px;
             }
-            &__title{
+            &-title{
                 width: 600px;
                 margin-top: 30px;
                 color: #3C3E48;
@@ -66,7 +66,7 @@ $desktop-width: 1024px;
             &-info{
                 margin-top: 40px;
                 width: 350px;
-                &__detail{
+                &-detail{
                     color: #3C9488;
                     font-size: 18px;
                     font-weight: bold;
@@ -94,13 +94,13 @@ $desktop-width: 1024px;
                         margin-left: 72px;
                     }
                 }
-                &__flex{
+                &-flex{
                     margin-top: 30px;
                     margin-bottom: 30px;
                     list-style: none;
                 }
             }
-            &__cv{
+            &-cv{
                 margin-top: 60px;
                 font-weight: bold;
                 background-color: #3C9488;
@@ -116,7 +116,7 @@ $desktop-width: 1024px;
                 }
             }
         }
-        &__img{
+        &-img{
             position: relative;
             top: 80px;
             right: 596px;

@@ -7,35 +7,35 @@ function Contact() {
         <h2 className="contact__title">Liên hệ tôi</h2>
       </div>
 
-      <div data-aos="fade-up" className="contact-container">
-        <div className="contact-container-info">
-          <div className="contact-container-info-1">
-            <div className="contact-container-info-1__border">
+      <div data-aos="fade-up" className="contact__container">
+        <div className="contact__container-info">
+          <div className="contact__container-info-1">
+            <div className="contact__container-info-1-border">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
                 height="30"
                 fill="#3C3E48"
-                class="contact-container-info-1__icon"
+                class="contact__container-info-1-icon"
                 viewBox="0 0 16 16"
               >
                 <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
               </svg>
             </div>
-            <h3 className="contact-container-info-1__address">Địa chỉ</h3>
-            <p className="contact-container-info-1__detail_1">
+            <h3 className="contact__container-info-1-address">Địa chỉ</h3>
+            <p className="contact__container-info-1-detail-1">
               Phú Dương, Phú Vang, Thừa Thiên Huế
             </p>
           </div>
 
-          <div className="contact-container-info-2">
-            <div className="contact-container-info-2__border">
+          <div className="contact__container-info-2">
+            <div className="contact__container-info-2-border">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
                 height="30"
                 fill="#3C3E48"
-                class="contact-container-info-2__icon"
+                class="contact__container-info-2-icon"
                 viewBox="0 0 16 16"
               >
                 <path
@@ -44,27 +44,27 @@ function Contact() {
                 />
               </svg>
             </div>
-            <h3 className="contact-container-info-2__phone">
+            <h3 className="contact__container-info-2-phone">
               Điện thoại liên lạc
             </h3>
-            <p className="contact-container-info-2__detail_2">0334354648</p>
+            <p className="contact__container-info-2-detail-2">0334354648</p>
           </div>
 
-          <div className="contact-container-info-3">
-            <div className="contact-container-info-3__border">
+          <div className="contact__container-info-3">
+            <div className="contact__container-info-3-border">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
                 height="30"
                 fill="#3C3E48"
-                class="contact-container-info-3__icon"
+                class="contact__container-info-3-icon"
                 viewBox="0 0 16 16"
               >
                 <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
               </svg>
             </div>
-            <h3 className="contact-container-info-3__email">Địa chỉ email</h3>
-            <p className="contact-container-info-3__detail_3">
+            <h3 className="contact__container-info-3-email">Địa chỉ email</h3>
+            <p className="contact__container-info-3-detail-3">
               ducnde170153@fpt.edu.vn
             </p>
           </div>

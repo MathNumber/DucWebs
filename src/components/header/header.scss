@@ -17,12 +17,12 @@ $desktop-width: 1024px;
     z-index: 100;
     display: flex;
     justify-content: center;
-    &-container{
+    &__container{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 1065px;
-        &__brand{
+        &-brand{
             position: relative;
             width: 182px;
             margin-top: 20px;
@@ -43,12 +43,12 @@ $desktop-width: 1024px;
         &-nav{
             display: flex;
             flex-direction: row;
-            &__item{
+            &-item{
                 margin-left: 58px;
                 margin-top: 24px;
                 list-style: none; 
             }
-            &__link{
+            &-link{
                 position: relative;
                 display: inline-block;
                 text-decoration: none;
@@ -79,7 +79,7 @@ $desktop-width: 1024px;
                 }
             }
         }
-        .right{
+        .navbar__container-right{
             display: none;
             @include tablet{
                 display: block;
@@ -89,7 +89,7 @@ $desktop-width: 1024px;
                 position: relative;
                 left: -110px;
             }
-            .hamburger{
+            .navbar__container-hamburger{
                 position: relative;
                 top: 25px;
                 right: 50px;
@@ -110,7 +110,7 @@ $desktop-width: 1024px;
         }
     }
     &.active{
-        .hamburger{
+        .navbar__container-hamburger{
             span{
                 &:first-child{
                     transform: rotate(45deg);
