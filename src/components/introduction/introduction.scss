@@ -39,7 +39,7 @@ $desktop-width: 1024px;
             @include tablet {
                 position: relative;
                 top: 40px;
-                left: 380px;
+                left: 390px;
                 width: 380px;
             }
             @include mobile {
@@ -130,7 +130,7 @@ $desktop-width: 1024px;
                     position: relative;
                     width: 300px;
                     object-fit: cover;
-                    left: 240px;
+                    left: 255px;
                 }
                 @include mobile{
                     display: none;
